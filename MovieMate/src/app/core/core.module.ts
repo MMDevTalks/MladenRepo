@@ -17,7 +17,8 @@ import { SharedModule } from '../shared/shared.module';
     SvgDefinitionsComponent
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    SvgDefinitionsComponent
   ],
   providers: [
     MovieService
