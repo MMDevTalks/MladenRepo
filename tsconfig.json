@@ -4,16 +4,18 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
+    "baseUrl": "./src",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
+    "paths": {
+      "@movies/shared": ["./app/shared"],
+      "@movies/services": ["./app/core/services"]
+    },
     "typeRoots": [
       "node_modules/@types"
     ],
-    "paths": {
-      "@movies/shared": ["app/shared"]
-    },
     "lib": [
       "es2017",
       "dom"
